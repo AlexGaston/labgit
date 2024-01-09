@@ -1,7 +1,24 @@
 #Laboratorio de Git
 
 1. Crear un repositorio en local
+Inicializa el repositorio de Git. --> git init
+
 2. Subir el repositorio a GitHub
+Conecta tu repositorio local con el repositorio en GitHub.-->git clone https://github.com/AlexGaston/labgit
+
 3. Hacer un commit y un push
+Añade el archivo al staging. --> git add .
+Crea un commit con un mensaje descriptivo. --> git commit -m "mensaje commit"
+Sube los cambios al repositorio en GitHub. --> git push
+
 4. Crear una rama
-5. Hacer un merge (Aquí sin querer he borrado el readme porque lo había borrado de la rama development y me lo he llevado a main... Lo he vuelto a crear)
+Crea una rama nueva llamada "development". --> git branch development
+Cambia a la nueva rama. --> git checkout development
+Añade y haz un commit con los cambios en la rama "development". --> git commit -m "mensaje commit" 
+Sube los cambios a Github. --> git push
+ 
+5. Hacer un merge
+Vuelve a la rama "main". --> git checkout main
+Haz un merge de la rama "development" a la rama "main". --> git merge development
+Si no hay conflictos, los cambios realizados en la rama "development" se incorporarán a la rama "main". --> git commit -m "Mergeado la rama development a main"
+Hax un push de los cambios al repositorio en GitHub. --> git push
